@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>流媒体 & 边下边播</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header"> 流媒体边下边播 </header>
+
+    <main class="main">
+ 
+      <div class="option">
+ 
+        <div class="upload">
+          <input id="file" type="file" style="display:none" />
+          <i class="iconfont icon-upload" data-title="上传" onclick="fileOnUpload()"> </i> 
+        </div>
+
+        <div class="address">
+          <input class="input" spellcheck="false" maxlength="128" placeholder="输入网络地址" />
+        </div>
+         
+        <div class="playmenu">
+          <i class="iconfont icon-play" data-title="播放" onclick="playAddress()"> </i> 
+          <i class="iconfont icon-download" data-title="下载" onclick="downloadAddress()"> </i> 
+        </div>
+      </div> 
+
+
+      <div class="media">
+        <div class="m3u8-list"></div>
+        <video src="" class="video" onerror="this.classList.add('error')"> 占卜支持 </video>
+      </div>
+ 
+    </main>
+     
+
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+      
+      function playAddress(){
+        const addressInput = document.querySelector('.address > .input')
+
+        console.log(addressInput)
+      }
+      function downloadAddress(){
+        const addressInput = document.querySelector('.address > .input')
+
+        console.log(addressInput)
+      }
+    </script>
+  </body>
+</html>

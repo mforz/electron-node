@@ -1,0 +1,18 @@
+{
+  "name": "electron-node",
+  "version": "1.0.0",
+  "description": "electron app for zys test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "app",
+    "electron"
+  ],
+  "author": "zys",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  }
+}

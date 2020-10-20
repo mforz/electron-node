@@ -1,0 +1,126 @@
+@import "../iconfont/iconfont.css";
+
+body {
+  width: 100%;
+  min-width: 520px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    overflow-x: scroll;
+  }
+}
+
+.header,
+.main {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.option {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+input:focus {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.address {
+  flex: auto;
+  overflow: hidden;
+}
+
+.input {
+  width: 100%;
+  padding: 4px 8px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #f4f4f4;
+}
+.button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+.playmenu,
+.upload {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload {
+  width: 60px;
+}
+.playmenu {
+  width: 80px;
+}
+.icon-download {
+  margin-left: 8px;
+}
+
+.iconfont {
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.iconfont:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 100px;
+  font-size: 12px;
+
+  text-align: center;
+  padding: 5px;
+  border-radius: 2px;
+
+  top: 100%;
+  left: 50%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 999;
+}
+
+.media {
+  width: 100%;
+  margin: 48px 0;
+}
+.video {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
+}
+.video.error {
+  background: #000
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'%3E视频无法预览%3C/text%3E%3C/svg%3E")
+    no-repeat center;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #cccddd;
+}
